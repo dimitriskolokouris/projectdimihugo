@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using projectdimihugo.Models;
 using System.Diagnostics;
+using MySql.Data;
 
 namespace projectdimihugo.Controllers
 {
