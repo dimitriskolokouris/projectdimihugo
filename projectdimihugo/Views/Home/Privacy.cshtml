@@ -1,6 +1,88 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioscoop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-<p>Use this page to detail your site's privacy policy.</p>
+    header {
+      background-color: #BA00FF;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #F8F8F8;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #BA00FF;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bioscoop</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#films">Films</a></li>
+      <li><a href="#kinderen">Kinderen</a></li>
+      <li><a href="#jongeren">Jongeren</a></li>
+      <li><a href="#volwassenen">Volwassenen</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="films">
+      <h2>Films</h2>
+      <p>Hier kunnen mensen zien welke films gedraaid worden in onze bioscoop.</p>
+    </section>
+
+    <section id="kinderen">
+      <h2>Kinderen</h2>
+      <p>Categorie met alleen maar kinderfilms die kinderen tot en met 11 jaar mogen kijken.</p>
+    </section>
+
+    <section id="jongeren">
+      <h2>Jongeren</h2>
+      <p>Categorie met films die alleen te zien zijn als je leeftijd boven de 12 is.</p>
+    </section>
+
+    <section id="volwassenen">
+      <h2>Volwassenen</h2>
+      <p>Categorie met films die alleen voor volwassenen toegestaan zijn.</p>
+    </section>
+  </main>
+</body>
