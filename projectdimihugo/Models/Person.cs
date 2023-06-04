@@ -4,11 +4,11 @@ namespace projectdimihugo.Models
 {
     public class Person
     {
-        [Required]
+        [Required(ErrorMessage = "Voornaam verplicht invullen")]
         public string Voornaam { get; set; } = default!;
-        [Required]
+        [Required(ErrorMessage = "Achternaam verplicht invullen")]
         public string Achternaam { get; set; } = default!;
-        [Required]
+        [EmailAddress(ErrorMessage = "Emailaddress verplicht invullen")]
         public string Email { get; set; } = default!;
         public string Phone { get; set; } = default!;
         public string Address { get; set; } = default!;
