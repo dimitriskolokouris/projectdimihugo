@@ -1,15 +1,23 @@
-﻿@{
+﻿@model projectdimihugo.Models.Person
+@{
     ViewData["Title"] = "Contact";
 }
 <h1>@ViewData["Title"]</h1>
 
 <form method="post">
-    Voornaam: <input type="text" name="firstname" />
-    Achternaam: <input type="text" name="lastname" />
+    <div>Voornaam: <input type="text" name="firstname" /></div>
+    <div>Achternaam: <input type="text" name="lastname" /></div>
+    <div>Email: <input type="text" name="Email" /></div>
+    <div>Telefoon: <input type="text" name="Phone" /></div>
+    <div>Address: <input type="text" name="Address" /></div>
+    <div>Bericht: <input type="text" name="Description" /></div>
     <input type="submit" value="verstuur" />
 </form>
 
-<p>Hallo, @ViewData["firstname"] die als achternaam @ViewData["lastname"] heeft</p>
+@if(Model!= null){
+  <p>Hallo @Model.Voornaam die achternaam @Model.Achternaam heeft</p>
+}
+
 
 
 
