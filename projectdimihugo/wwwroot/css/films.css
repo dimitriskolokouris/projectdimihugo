@@ -1,0 +1,32 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.film-category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.film-category-column {
+    flex-basis: 30%;
+}
+
+    .film-category-column h2 {
+        text-align: center;
+    }
