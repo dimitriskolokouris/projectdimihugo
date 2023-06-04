@@ -4,25 +4,33 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<form method="post">
-    <div>Voornaam: <input type="text" name="firstname" /></div>
-    @Html.ValidationMessageFor(m => m.Voornaam)
-    <div>Achternaam: <input type="text" name="lastname" /></div>
-    @Html.ValidationMessageFor(m => m.Achternaam)
-    <div>Email: <input type="text" name="Email" /></div>
-    @Html.ValidationMessageFor(m => m.Email)
-    <div>Telefoon: <input type="text" name="Phone" /></div>
-    <div>Address: <input type="text" name="Address" /></div>
-    <div>Bericht: <input type="text" name="Description" /></div>
+<form method="post" class="contactform">
+    <div class="form-group">
+        @Html.LabelFor(m => m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName)
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName)
+        @Html.ValidationMessageFor(m => m.LastName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextBoxFor(m => m.Description)
+        @Html.ValidationMessageFor(m => m.Description)
+    </div>
+
     <input type="submit" value="verstuur" />
 </form>
-
-@if(Model!= null){
-  <p>Hallo @Model.Voornaam die achternaam @Model.Achternaam heeft</p>
-}
-
-
-
 
 
 
