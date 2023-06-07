@@ -10,4 +10,8 @@
     <PackageReference Include="MySql.Data" Version="8.0.33" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\logo.png" />
+  </ItemGroup>
+
 </Project>

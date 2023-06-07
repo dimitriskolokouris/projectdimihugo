@@ -90,18 +90,18 @@ a.navbar-brand {
 
 
 a {
-    color: #0366d6;
+    color: #BA00FF;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
+    color: #BA00FF;
+    background-color: #BA00FF;
     border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
+    color: #BA00FF;
+    background-color: #BA00FF;
     border-color: #1861ac;
 }
 
@@ -160,4 +160,9 @@ body {
 .contactform .field-validation-error {
     color: red;
     margin-left: 10px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
