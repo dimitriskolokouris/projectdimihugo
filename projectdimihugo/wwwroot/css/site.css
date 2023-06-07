@@ -145,7 +145,7 @@ body {
 }
 
 .footer {
-    position: fixed;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -162,7 +162,7 @@ body {
     margin-left: 10px;
 }
 
-img {
+.navbar-brand img {
     height: 50px;
     width: 50px;
 }
