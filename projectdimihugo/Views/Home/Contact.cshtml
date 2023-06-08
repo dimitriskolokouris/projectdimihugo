@@ -2,35 +2,61 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<h1>@ViewData["Title"]</h1>
 
-<form method="post" class="contactform">
-    <div class="form-group">
-        @Html.LabelFor(m => m.FirstName)
-        @Html.TextBoxFor(m => m.FirstName)
-        @Html.ValidationMessageFor(m => m.FirstName)
-    </div>
+<style>
+    .details {
+        top: 30px;
+        height: 500px;
+        background-color: #BA00FF;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        border-radius: 25px;
+    }
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.LastName)
-        @Html.TextBoxFor(m => m.LastName)
-        @Html.ValidationMessageFor(m => m.LastName)
-    </div>
+    .paragraaf {
+        text-align: center;
+        margin-left: 2px;
+        font-family: Calibri;
+    }
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email)
-        @Html.TextBoxFor(m => m.Email)
-        @Html.ValidationMessageFor(m => m.Email)
-    </div>
+    .tekst {
+        text-align: center;
+        margin-left: 40%;
+        width: 100px;
+        font-family: Calibri;
+    }
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Description)
-        @Html.TextBoxFor(m => m.Description)
-        @Html.ValidationMessageFor(m => m.Description)
-    </div>
+    .hoofdtekst {
+        text-align: center;
+        font-family: Calibri;
+    }
 
-    <input type="submit" value="verstuur" />
+    .verstuur {
+        margin-left: 45%;
+        font-family: Calibri;
+    }
+</style>
+
+<div class="details">
+    <h1 class="hoofdtekst">Contact</h1>
+    <p class="paragraaf">Heb jij een vraag over een van de reizen? Stel ze gerust hier!</p>
+
+<form method= "post">
+    <div class="tekst">Voornaam: <input type="text" name="firstname" /></div>
+    @Html.ValidationMessageFor(m => m.FirstName)
+    <div class="tekst">Achternaam: <input type="text" name="lastname" /></div>
+    @Html.ValidationMessageFor(m => m.LastName)
+    <div class="tekst">E-mail: <input type="text" name="email" /></div>
+    @Html.ValidationMessageFor(m => m.Email)
+    <div class="tekst">Telefoon: <input type="text" name="phone" /></div>
+    <div class="tekst">Adres: <input type="text" name="adress" /></div>
+    <div class="tekst">Beschrijving: <input type="text" name="description" /></div>
+    <br>
+    <input class="verstuur" type="submit" value="verstuur" />
 </form>
+</div>
 
 
 
