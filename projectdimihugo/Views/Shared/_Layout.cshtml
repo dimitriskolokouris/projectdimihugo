@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/films.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/projectdimihugo.styles.css" asp-append-version="true" />
+
+    <style>
+    .social-icons {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -43,8 +55,25 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - projectdimihugo - <a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+            &copy; 2023 - All rights reserved - <a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
         </div>
+        <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com">
+                <img src="~/Images/facebook.jpg" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com">
+                <img src="~/Images/twitter.png" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dimitris_kolokouris">
+                <img src="~/Images/instagram.png" alt="Instagram">
+              </a>
+            </li>
+        </ul>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
