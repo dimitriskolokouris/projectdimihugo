@@ -1,0 +1,8 @@
+﻿body {
+}
+
+
+.film-category-column {
+    border: 1px solid black; /* Specify the border style */
+    padding: 5px; /* Add padding for better appearance */
+}

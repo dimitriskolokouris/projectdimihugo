@@ -23,6 +23,11 @@ namespace projectdimihugo.Controllers
         {
             return View();
         }
+
+        public IActionResult Tickets()
+        {
+            return View();
+        }
         public IActionResult Contact()
         {
             return View();
