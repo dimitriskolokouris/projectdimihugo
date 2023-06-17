@@ -2,7 +2,54 @@
 }
 
 
-.film-category-column {
-    border: 1px solid black; /* Specify the border style */
-    padding: 5px; /* Add padding for better appearance */
+.titel {
+    text-align: center;
+    font-family: Calibri;
+    top: 50%;
+    transform: translate(0%, 140%);
+}
+
+.film-category-column1 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    width: 250px;
+    height: 400px;
+    top: 50%;
+    transform: translate(5%, 35%);
+}
+
+.film-category-column2 {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    width: 250px;
+    height: 400px;
+    top: 50%;
+    transform: translate(5%, 35%);
+}
+
+.titel2{
+    text-align:center;
+}
+
+.description {
+    font-family: Calibri;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    width: 750px;
+    height: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48.5%, -55%);
+}
+
+.waarschuwing {
+    margin-top: 60px;
+}
+
+.prem{
+    margin-top: 60px;
 }
