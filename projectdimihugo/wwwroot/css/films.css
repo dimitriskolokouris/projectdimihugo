@@ -1,4 +1,26 @@
-﻿html {
+﻿/* we gebruiken de volgende kleurcodes in de website
+    
+    #0DD5F0 : lichtblauw voor de achtergrond
+    #000000 : zwart voor het lettertype
+    #FFFFFF : wit voor achtergrond zoekbalk
+    #BA00FF : paars voor o.a. contactbutton
+    #45a049 : groen voor knoppen (als je eroverheen hoovert)
+
+*/
+
+.titel {
+    text-align: center;
+    font-family: Calibri;
+    top: 50%;
+    transform: translate(0%, 140%);
+}
+
+.td.table {
+    background-color: #0DD5F0; /* achtergrond tussenstuk pagina */
+    padding: 40px;
+}
+
+html {
     font-size: 14px;
 }
 
@@ -14,11 +36,18 @@ html {
 }
 
 body {
+    background-color: #BA00FF; /* achtergrond tussenstuk pagina */
     margin-bottom: 60px;
-    font-family: Calibri; 
+    font-family: Calibri;
+}
+
+.film {
+    background-color: #0DD5F0; /* achtergrond blok film */
+    margin: 10px;
 }
 
 .film-category {
+    background-color: #0DD5F0; /* achtergrond blok film */
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -28,7 +57,7 @@ body {
     flex-basis: 30%;
 }
 
-    .film-category-column h2 {
+.film-category-column h2 {
         text-align: center;
     }
 

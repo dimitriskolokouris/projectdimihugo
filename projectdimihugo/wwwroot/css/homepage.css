@@ -2,8 +2,20 @@ html {
   font-size: 14px;
 }
 
+/* we gebruiken de volgende kleurcodes in de website
+    
+    #0DD5F0 : lichtblauw voor de achtergrond
+    #000000 : zwart voor het lettertype
+    #FFFFFF : wit voor achtergrond zoekbalk
+    #BA00FF : paars voor o.a. contactbutton
+    #45a049 : groen voor knoppen (als je eroverheen hoovert)
+
+*/
+
+
+
 @media (min-width: 768px) {
-  html {
+    html {
     font-size: 16px;
   }
 }
@@ -19,7 +31,7 @@ body {
 
 
 body {
-    background-color: #0DD5F0;
+    background-color: #0DD5F0; /* achtergrond tussenstuk pagina */
     color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;

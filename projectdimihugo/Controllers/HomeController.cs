@@ -19,7 +19,7 @@ namespace projectdimihugo.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Films()
         {
             return View();
         }
@@ -28,6 +28,17 @@ namespace projectdimihugo.Controllers
         {
             return View();
         }
+
+        public IActionResult Vacatures()
+        {
+            return View();
+        }
+
+        public IActionResult Informatie()
+        {
+            return View();
+        }
+         
         public IActionResult Contact()
         {
             return View();

@@ -9,6 +9,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+// functie om Coockie van de computer te lezen
 function getCookie(cname) {
     let name = cname + "=";
     let ca = document.cookie.split(';');
@@ -24,14 +25,19 @@ function getCookie(cname) {
     return "";
 }
 
+
+// user : Cookie plaatsen als er nog geen Cookie staat op de computer en anders gebruiker welkom heten
 function checkCookie() {
     let user = getCookie("username");
     if (user != "") {
         alert("Welkom terug " + user);
-    } else {
+    }
+    // Als de variabele user niet leeg is dan is er een Cookie gezet in het verleden en heten we de user welkom
+    else {
         user = prompt("Vul je naam in:", "");
         if (user != "" && user != null) {
             setCookie("username", user, 365);
         }
+    // Als de variabele user wel leeg is dan zetten we nu een Cookie door eerst de gebruikersnaam te vragen
     }
 }
