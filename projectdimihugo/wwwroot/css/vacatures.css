@@ -1,0 +1,91 @@
+﻿/* we gebruiken de volgende kleurcodes in de website
+    
+    #0DD5F0 : lichtblauw voor de achtergrond
+    #000000 : zwart voor het lettertype
+    #FFFFFF : wit voor achtergrond zoekbalk
+    #BA00FF : paars voor o.a. contactbutton
+    #45a049 : groen voor knoppen (als je eroverheen hoovert)
+
+*/
+
+.titel {
+    text-align: center;
+    font-family: Calibri;
+    top: 50%;
+    transform: translate(0%, 140%);
+}
+
+.td.table {
+    background-color: #0DD5F0; /* achtergrond tussenstuk pagina */
+    padding: 40px;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #BA00FF; /* achtergrond tussenstuk pagina */
+    margin-bottom: 60px;
+    font-family: Calibri;
+}
+
+.vacature {
+    background-color: #0DD5F0; /* achtergrond blok vacature */
+    margin: 10px;
+}
+
+.vacature-category {
+    background-color: #0DD5F0; /* achtergrond blok vacature */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.vacature-category-column {
+    flex-basis: 30%;
+}
+
+.vacature-category-column h2 {
+        text-align: center;
+    }
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    border: 2.5px solid black;
+    border-color: black;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translateX(-50%) translateY(5%);
+}
+
+    .search-bar input[type="text"] {
+        padding: 5px;
+        width: 500px;
+        height: 35px;
+        background-color: white;
+        color: black;
+        border: none;
+    }
+
+    .search-bar input[type="submit"] {
+        padding: 5px 10px;
+        background-color: #FFFFFF;
+        border: 1.5px solid black;
+        border-color: black;
+        cursor: pointer;
+    }

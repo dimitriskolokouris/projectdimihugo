@@ -24,6 +24,21 @@ namespace projectdimihugo.Controllers
             return View();
         }
 
+        public IActionResult FilmsKinderen()
+        {
+            return View();
+        }
+
+        public IActionResult FilmsJongeren()
+        {
+            return View();
+        }
+
+        public IActionResult FilmsVolwassenen()
+        {
+            return View();
+        }
+
         public IActionResult Tickets()
         {
             return View();

@@ -17,17 +17,18 @@
         <div class="film p-4 border border-4 border-dark"> <!-- met bootstrap classes maken we een zwarte/dark rand/border met dikte 4 -->
             <h1>6 t/m 11 jaar</h1>
             <p>Wij hebben leuke films voor kinderen van 6 tot 11 jaar. Deze films draaien in de middag tussen 13:00 en 18:00 uur.<p>
-            <div class="text-center"> <!-- om de button te centreren gebruiken we een div -->
-                <button type="button" class="btn btn-dark">Druk hier</button>
+            <!-- om de button te centreren gebruiken we een div -->
+            <div class="text-center">
+               <a href="/Home/FilmsKinderen" class="btn btn-dark" role="button">Link Button</a>
             </div>
         </div>
-
+        
         <!-- blok voor kinderen 12 tot en met 17 jaar -->
         <div class="film p-4 border border-4 border-dark">
             <h1>12 t/m 17 jaar</h1>
             <p>Wij hebben leuke films voor kinderen van 12 tot 17 jaar. Deze films draaien in de namiddag tussen 18:00 en 22:00 uur.<p>
             <div class="text-center">
-                <button type="button" class="btn btn-dark">Druk hier</button>
+                <a href="/Home/FilmsJongeren" class="btn btn-dark" role="button">Link Button</a>
             </div>
         </div>
 
@@ -37,254 +38,12 @@
             <p>Wij hebben leuke films voor volwassenen. Deze films draaien in de avond/nacht tussen 22:00 en 02:00 uur.<p>
             <!-- we maken een button met een kliklink naar de pagina met films voor 18+ -->
             <div class="text-center">
-                <a href="#link" class="btn btn-dark" role="button">Link Button</a>
+                <a href="/Home/FilmsVolwassenen" class="btn btn-dark" role="button">Link Button</a>
             </div>
         </div>
 
     </div>
 
-    <!-- hieronder de tabellen die eigenlijk op aparte pagina's thuishoren -->
-
-        <div class="film-category-column">
-            <h2>6-11 jaar</h2>
-            <p>Wij hebben leuke films voor kinderen van 12 tot 17 jaar. Deze films draaien in begin van de avond tussen 18:00 en 22:00 uur.<p>
-           <!-- Films for 6-11 years old -->
-            <table class="table table-hover"> <!-- we introduceren hover zodat je ziet welke rij je selecteert -->
-            <!-- deze tabel moet eigenlijk dynamisch uit de database worden opgebouwd,
-                echter de database werkt niet dus hebben we een vaste pagina gemaakt
-                zo ontstaat er toch een beeld van hoe de pagina eruit moet zien.
-                We klikken ook niet door vanuit de tabel naar het bestelformulier voor de specifieke film.
-            -->
-            <thead style="text-align:left"> <!-- we maken een header voor de kolommen van de tabel -->
-            <tr>
-                <th>Film</th>
-                <th>Prijs</th>
-                <th>Aantal</th>
-                <th>Soort</th>
-                <th>Zaal</th>
-                <th>Duur</th>
-                <th>Aanvangstijden</th>
-            </tr>
-            </thead>
-            <tbody> <!-- de rijen met gegevens komen in tbody -->
-            <tr>
-                <td>Mummies</td>
-                <td>€ 5,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 1</td>
-                <td>75 minuten</td>
-                <td>13:00 - 14:30 - 16:00</td>
-            </tr>
-            <tr>
-                <td>Mummies</td>
-                <td>€ 12,50</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 1</td>
-                <td>75 minuten</td>
-                <td>13:00 - 14:30 - 16:00</td>
-            </tr>
-            <tr>
-                <td>Kung Fu Leeuw</td>
-                <td>€ 6,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 2</td>
-                <td>65 minuten</td>
-                <td>13:00 - 14:30 - 16:00</td>
-            </tr>
-            <tr>
-                <td>Kung Fu Leeuw</td>
-                <td>€ 15,00</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 2</td>
-                <td>65 minuten</td>
-                <td>13:00 - 14:30 - 16:00</td>
-            </tr>
-            <tr>
-                <td>De Zwanenprinses</td>
-                <td>€ 8,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 3</td>
-                <td>70 minuten</td>
-                <td>13:00 - 14:30 - 16:00</td>
-            </tr>
-            <tr>
-                <td>De Zwanenprinses</td>
-                <td>€ 20,00</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 3</td>
-                <td>70 minuten</td>
-                <td>13:00 - 14:30 - 16:00</td>
-            </tr>
-            </tbody>
-                <!-- Add more films as needed -->
-            </table>
-        </div>
-
-        <div class="film-category-column">
-            <h2>12-17 jaar</h2>
-            <p>Wij hebben leuke films voor kinderen van 12 tot 17 jaar. Deze films draaien in begin van de avond tussen 18:00 en 22:00 uur.<p>
-            <!-- Films for 12-17 years old -->
-            <table class="table table-hover">
-            <!-- deze tabel moet eigenlijk dynamisch uit de database worden opgebouwd,
-                echter de database werkt niet dus hebben we een vaste pagina gemaakt
-                zo ontstaat er toch een beeld van hoe de pagina eruit moet zien.
-            -->
-            <thead style="text-align:left">
-            <tr>
-                <th>Film</th>
-                <th>Prijs</th>
-                <th>Aantal</th>
-                <th>Soort</th>
-                <th>Zaal</th>
-                <th>Duur</th>
-                <th>Aanvangstijden</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Spiderman</td>
-                <td>€ 10,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 1</td>
-                <td>75 minuten</td>
-                <td>18:00 - 19:30 - 21:00</td>
-            </tr>
-            <tr>
-                <td>Spiderman</td>
-                <td>€ 25,00</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 1</td>
-                <td>75 minuten</td>
-                <td>18:00 - 19:30 - 21:00</td>
-            </tr>
-            <tr>
-                <td>Elemental</td>
-                <td>€ 8,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 2</td>
-                <td>65 minuten</td>
-                <td>18:00 - 19:30 - 21:00</td>
-            </tr>
-            <tr>
-                <td>Elemental</td>
-                <td>€ 20,00</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 2</td>
-                <td>65 minuten</td>
-                <td>18:00 - 19:30 - 21:00</td>
-            </tr>
-            <tr>
-                <td>Ladybug Cat Noir</td>
-                <td>€ 9,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 3</td>
-                <td>85 minuten</td>
-                <td>18:00 - 19:30 - 21:00</td>
-            </tr>
-            <tr>
-                <td>Ladybug Cat Noir</td>
-                <td>€ 22,50</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 3</td>
-                <td>85 minuten</td>
-                <td>18:00 - 19:30 - 21:00</td>
-            </tr>
-            </tbody>
-                <!-- Add more films as needed -->
-            </table>
-        </div>
-
-        <div class="film-category-column">
-            <h2>18+</h2>
-            <!-- Films for 18+ years old -->
-            <p>Wij hebben leuke films voor volwassenen. Deze films draaien in de avond/nacht tussen 22:00 en 02:00 uur.<p>
-            <table class="table table-hover">
-            <!-- deze tabel moet eigenlijk dynamisch uit de database worden opgebouwd,
-                echter de database werkt niet dus hebben we een vaste pagina gemaakt
-                zo ontstaat er toch een beeld van hoe de pagina eruit moet zien.
-            -->
-            <thead style="text-align:left">
-            <tr>
-                <th>Film</th>
-                <th>Prijs</th>
-                <th>Aantal</th>
-                <th>Soort</th>
-                <th>Zaal</th>
-                <th>Duur</th>
-                <th>Aanvangstijden</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Logan</td>
-                <td>€ 15,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 1</td>
-                <td>75 minuten</td>
-                <td>22:00 - 23:15 - 00:30</td>
-            </tr>
-            <tr>
-                <td>Logan</td>
-                <td>€ 37,50</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 1</td>
-                <td>75 minuten</td>
-                <td>22:00 - 23:15 - 00:30</td>
-            </tr>
-            <tr>
-                <td>Hidden Figures</td>
-                <td>€ 18,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 2</td>
-                <td>65 minuten</td>
-                <td>22:00 - 23:15 - 00:30</td>
-            </tr>
-            <tr>
-                <td>Hidden Figures</td>
-                <td>€ 45,00</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 2</td>
-                <td>65 minuten</td>
-                <td>22:00 - 23:15 - 00:30</td>
-            </tr>
-            <tr>
-                <td>The Fault in Our Stars</td>
-                <td>€ 12,00</td>
-                <td>één kaartje</td>
-                <td>enkele stoel</td>
-                <td>zaal 3</td>
-                <td>70 minuten</td>
-                <td>22:00 - 23:15 - 00:30</td>
-            </tr>
-            <tr>
-                <td>The Fault in Our Stars</td>
-                <td>€ 30,00</td>
-                <td>twee kaartjes</td>
-                <td>dubbele stoel</td>
-                <td>zaal 3</td>
-                <td>70 minuten</td>
-                <td>22:00 - 23:15 - 00:30</td>
-            </tr>
-            </tbody>
-                <!-- Add more films as needed -->
-            </table>
-        </div>
 
     <div class="search-bar">
         <input type="text" placeholder="Zoeken...">
