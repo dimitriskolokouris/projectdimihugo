@@ -15,13 +15,13 @@ html {
 /* begin css code nachtmodus */
 
 :root {
-    --color-bg: #000000;
-    --color-fg: #0DD5F0;
+    --color-bg: #0DD5F0;
+    --color-fg: #000000;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-bg: #0DD5F0;
+        --color-bg: #BA00FF;
         --color-fg: #000000;
     }
 }
@@ -54,8 +54,8 @@ body {
 /* 3 stappen, stap 2 : onder body in html knop nachtmodus toevoegen */
 /* 3 stappen, stap 3 : bij einde body in html script toegevoegd voor nachtmodus */
 .dark-mode {
-    background-color: yellow;
-    color: forestgreen;
+    background-color: black;
+    color: white;
 }
 
 .homepage container {
