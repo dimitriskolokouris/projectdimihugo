@@ -2,45 +2,56 @@
 <html>
 <head>
     <title>Cinema Website - Tickets</title>
-    <link rel="stylesheet" type="text/css" href="tickets.css">
+    <link rel="stylesheet" type="text/css" href="films.css">
+    <!-- stylesheet van films zodat de paginas hetzelfde zijn -->
 </head>
 <body>
-    <h1 class="titel">Ticket Prijzen</h1>
-    
+    <h1>Ticketinformatie</h1>
+
+    <div class="d-flex justify-content-around">
+
+        <!-- tickets  -->
+        <div class="film p-4 border border-4 border-dark">
+            <h1>Tickets</h1>
+            <p>Er wordt nog gewerkt aan een bestelsysteem.<p>
+            <p>De tickets voor kinderen zijn wat goedkoper dan voor jongeren.<p>
+            <p>De tickets voor volwassenen zijn wat duurder dan voor jongeren.<p>
+        </div>
+
+        <!-- één stoel of dubbele stoel -->
+        <div class="film p-4 border border-4 border-dark">
+            <h1>Verschil in stoelen</h1>
+            <p>Wij hebben luxe eenpersoonsstoelen.<p>
+            <p>Daarnaast hebben we ook luxe dubbele stoelen voor 2 personen; deze stoelen hebben ook wat meer privacy maar zijn daardoor ook wat duurder.<p>
+            <p>Voor de luxe dubbele stoelen dien je 2 kaartjes per keer af te rekenen. Daarnaast zit er een opslag omdat die stoelen meer ruimte innemen.<p>
+        </div>
+
+        <!-- Films -->
+        <div class="film p-4 border border-4 border-dark">
+            <h1>Films</h1>
+            <p>Wij controleren op leeftijd.<p>
+            <p>Voor kinderen hebben we een middagprogramma. Deze films draaien allemaal in de middag.<p>
+            <p>Voor jongeren hebben we een avondprogramma. Deze films draaien allemaal in de avond.<p>
+            <p>Voor Volwassenen hebben we een nachtprogramma. Deze films draaien allemaal in de nacht.<p>
+            <p>Volwassenen mogen naar alle films; jongeren mogen naar films voor jongeren en kinderen. Kinderen mogen alleen naar kinderfilms.<p>
+        </div>
+
+    </div>
+
     <div class="description">
-        <h2>Over onze tickets:</h2>
-        <p>Het Normale Ticket geeft u toegang tot een standaardstoel in de filmzaal. Hoewel dit ticket geen extra voordelen biedt, kunt u toch genieten van de film in een prettige omgeving samen met andere filmliefhebbers.</p>
-        <p>Voor degenen die een verhoogde filmervaring willen, raden we ons Premium Ticket aan. Met het Premium Ticket kunt u genieten van het comfort van een comfortabelere stoel in een privégedeelte van de filmzaal. Deze exclusieve zitplaatsen bieden een hoger niveau van privacy, zodat u zich volledig kunt onderdompelen in de film zonder afleiding.</p>
-        <p>Of u nu kiest voor het Normale Ticket of het Premium Ticket, we garanderen een plezierige filmervaring. Kies het ticket dat het beste bij uw voorkeuren past en maak uw tijd in onze bioscoop onvergetelijk.</p>
-    </div>
-
-    <div class="film-category">
-        <div class="film-category-column1">
-            <h2 class="titel2">Normale</h2>
-            <!-- Films for 6-11 years old -->
-            <ul>
-                <li>Prijs Kinderen t/m 11 jaar = €10</li>
-                <li>Prijs Kinderen 12-17 jaar = €12</li>
-                <li>Prijs Volwassenen 18+ = €16</li>
-              
-                <p class="waarschuwing"> WAARSCHUWING: Deze tickets bevaten geen priveruimte, howel ze alsnog heel erg comfortabel zijn.</p>
-                <!-- Add more films as needed -->
-            </ul>
+        <h2>Tickets voor iedereen betaalbaar:</h2>
+        <p>Mocht een ticket te duur zijn dan geven wij korting met een ooievaarspas (te krijgen bij de gemeente).</p>
+        
+        <div class="text-center">
+            <a href="/Home/FilmsKinderen" class="btn btn-dark" role="button">Bestel ticket kinderen</a>
+            <a href="/Home/FilmsJongeren" class="btn btn-dark" role="button">Bestel ticket Jongeren</a>
+            <a href="/Home/FilmsVolwassenen" class="btn btn-dark" role="button">Bestel ticket Volwassenen</a>
         </div>
 
-        <div class="film-category-column2">
-            <h2 class="titel2">Premium</h2>
-            <!-- Films for 18+ years old -->
-            <ul>
-                <li>Prijs Kinderen t/m 11 jaar = €13</li>
-                <li>Prijs Kinderen 12-17 jaar = €15</li>
-                <li>Prijs Volwassenen 18+ = €21</li>
-
-                <p class= "prem"> ATTENTIE: Met de aankoop van deze tickets krijgt u prive ruimte binnen onze zaal + gratis snacks en drank</p>
-                <!-- Add more films as needed -->
-            </ul>
-        </div>
     </div>
+
+
+
     <div class="search-bar">
         <input type="text" placeholder="Zoeken...">
         <input type="submit" value="Zoek">
