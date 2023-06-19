@@ -1,0 +1,68 @@
+﻿@model projectdimihugo.Models.Person
+@{
+    ViewData["Title"] = "Sollicitatie Kok";
+}
+
+<style>
+    .details {
+        top: 30px;
+        height: 500px;
+        background-color: #BA00FF;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    .paragraaf {
+        text-align: center;
+        margin-left: 2px;
+        font-family: Calibri;
+    }
+
+    .tekst {
+        text-align: center;
+        margin-left: 40%;
+        width: 100px;
+        font-family: Calibri;
+    }
+
+    .hoofdtekst {
+        text-align: center;
+        font-family: Calibri;
+    }
+
+    .verstuur {
+        margin-left: 45%;
+        font-family: Calibri;
+    }
+</style>
+
+<div class="details">
+    <h1 class="hoofdtekst">Sollicitatie</h1>
+    <div class="text-center">
+        <img src="/Images/vacature-kok.png" height="250" alt="vacature Kok">
+    </div>
+    <p class="paragraaf">Wat leuk dat je interesse hebt om bij ons te komen werken als Kok of medewerker in de keuken. Vul je hieronder je gegevens in dan nemen we zo snel mogelijk contact met je op.</p>
+
+<form method= "post">
+    <div class="tekst">Voornaam: <input type="text" name="firstname" /></div>
+    @Html.ValidationMessageFor(m => m.FirstName)
+    <div class="tekst">Achternaam: <input type="text" name="lastname" /></div>
+    @Html.ValidationMessageFor(m => m.LastName)
+    <div class="tekst">E-mail: <input type="text" name="email" /></div>
+    @Html.ValidationMessageFor(m => m.Email)
+    <div class="tekst">Telefoon: <input type="text" name="phone" /></div>
+    <div class="tekst">Adres: <input type="text" name="adress" /></div>
+    <div class="tekst">Beschrijving: <input type="text" name="description" /></div>
+    <br>
+    <input class="verstuur" type="submit" value="verstuur" />
+</form>
+</div>
+
+
+
+
+
+

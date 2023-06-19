@@ -70,6 +70,54 @@ namespace projectdimihugo.Controllers
             return View(person);
         }
 
+        public IActionResult SolliciteerKok()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SolliciteerKok(Person person)
+        {
+            // hebben we alles goed ingevuld? Dan sturen we de gebruiker door naar de succes pagina
+            if (ModelState.IsValid)
+                return Redirect("/succes");
+
+            // niet goed? Dan sturen we de gegevens door naar de view zodat we de fouten kunnen tonen
+            return View(person);
+        }
+
+        public IActionResult SolliciteerKassa()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SolliciteerKassa(Person person)
+        {
+            // hebben we alles goed ingevuld? Dan sturen we de gebruiker door naar de succes pagina
+            if (ModelState.IsValid)
+                return Redirect("/succes");
+
+            // niet goed? Dan sturen we de gegevens door naar de view zodat we de fouten kunnen tonen
+            return View(person);
+        }
+
+        public IActionResult SolliciteerSchoonmaak()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SolliciteerSchoonmaak(Person person)
+        {
+            // hebben we alles goed ingevuld? Dan sturen we de gebruiker door naar de succes pagina
+            if (ModelState.IsValid)
+                return Redirect("/succes");
+
+            // niet goed? Dan sturen we de gegevens door naar de view zodat we de fouten kunnen tonen
+            return View(person);
+        }
+
         [Route("succes")]
         public IActionResult Succes()
         {
