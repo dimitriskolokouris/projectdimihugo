@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<!-- hier begint de Film - voorheen - Privacy pagina -->
+<html>
+<head>
+    <title>Cinema Website - Films</title>
+    <link rel="stylesheet" type="text/css" href="films.css">
+</head>
+<body>
+
+    <div class="text-center">
+        <h1>Films</h1>
+    </div>
+
+    <!-- hieronder de tabellen die eigenlijk op aparte pagina's thuishoren -->
+
+        <div class="film-category-column">
+            <h2>12-17 jaar</h2>
+            <p>Wij hebben leuke films voor kinderen van 12 tot 17 jaar. Deze films draaien in begin van de avond tussen 18:00 en 22:00 uur.<p>
+            <!-- Films for 12-17 years old -->
+            <table class="table table-hover">
+            <!-- deze tabel moet eigenlijk dynamisch uit de database worden opgebouwd,
+                echter de database werkt niet dus hebben we een vaste pagina gemaakt
+                zo ontstaat er toch een beeld van hoe de pagina eruit moet zien.
+            -->
+            <thead style="text-align:left">
+            <tr>
+                <th>Film</th>
+                <th>Prijs</th>
+                <th>Aantal</th>
+                <th>Soort</th>
+                <th>Zaal</th>
+                <th>Duur</th>
+                <th>Aanvangstijden</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Spiderman</td>
+                <td>€ 10,00</td>
+                <td>één kaartje</td>
+                <td>enkele stoel</td>
+                <td>zaal 1</td>
+                <td>75 minuten</td>
+                <td>18:00 - 19:30 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Spiderman</td>
+                <td>€ 25,00</td>
+                <td>twee kaartjes</td>
+                <td>dubbele stoel</td>
+                <td>zaal 1</td>
+                <td>75 minuten</td>
+                <td>18:00 - 19:30 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Elemental</td>
+                <td>€ 8,00</td>
+                <td>één kaartje</td>
+                <td>enkele stoel</td>
+                <td>zaal 2</td>
+                <td>65 minuten</td>
+                <td>18:00 - 19:30 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Elemental</td>
+                <td>€ 20,00</td>
+                <td>twee kaartjes</td>
+                <td>dubbele stoel</td>
+                <td>zaal 2</td>
+                <td>65 minuten</td>
+                <td>18:00 - 19:30 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Ladybug Cat Noir</td>
+                <td>€ 9,00</td>
+                <td>één kaartje</td>
+                <td>enkele stoel</td>
+                <td>zaal 3</td>
+                <td>85 minuten</td>
+                <td>18:00 - 19:30 - 21:00</td>
+            </tr>
+            <tr>
+                <td>Ladybug Cat Noir</td>
+                <td>€ 22,50</td>
+                <td>twee kaartjes</td>
+                <td>dubbele stoel</td>
+                <td>zaal 3</td>
+                <td>85 minuten</td>
+                <td>18:00 - 19:30 - 21:00</td>
+            </tr>
+            </tbody>
+                <!-- Add more films as needed -->
+            </table>
+        </div>
+
+    <div class="text-center">
+        <a href="/Home/Films" class="btn btn-dark" role="button">Terug naar Filmoverzicht</a>
+    </div>
+
+
+    <div class="search-bar">
+        <input type="text" placeholder="Zoeken...">
+        <input type="submit" value="Zoek">
+    </div>
+
+</body>
+</html>

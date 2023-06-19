@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<!-- hier begint de Film - voorheen - Privacy pagina -->
+<html>
+<head>
+    <title>Cinema Website - Films</title>
+    <link rel="stylesheet" type="text/css" href="films.css">
+</head>
+<body>
+
+    <div class="text-center">
+        <h1>Films - Volwassenen</h1>
+    </div>
+
+        <div class="film-category-column">
+            <h2>18+</h2>
+            <!-- Films for 18+ years old -->
+            <p>Wij hebben leuke films voor volwassenen. Deze films draaien in de avond/nacht tussen 22:00 en 02:00 uur.<p>
+            <table class="table table-hover">
+            <!-- deze tabel moet eigenlijk dynamisch uit de database worden opgebouwd,
+                echter de database werkt niet dus hebben we een vaste pagina gemaakt
+                zo ontstaat er toch een beeld van hoe de pagina eruit moet zien.
+            -->
+            <thead style="text-align:left">
+            <tr>
+                <th>Film</th>
+                <th>Prijs</th>
+                <th>Aantal</th>
+                <th>Soort</th>
+                <th>Zaal</th>
+                <th>Duur</th>
+                <th>Aanvangstijden</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Logan</td>
+                <td>€ 15,00</td>
+                <td>één kaartje</td>
+                <td>enkele stoel</td>
+                <td>zaal 1</td>
+                <td>75 minuten</td>
+                <td>22:00 - 23:15 - 00:30</td>
+            </tr>
+            <tr>
+                <td>Logan</td>
+                <td>€ 37,50</td>
+                <td>twee kaartjes</td>
+                <td>dubbele stoel</td>
+                <td>zaal 1</td>
+                <td>75 minuten</td>
+                <td>22:00 - 23:15 - 00:30</td>
+            </tr>
+            <tr>
+                <td>Hidden Figures</td>
+                <td>€ 18,00</td>
+                <td>één kaartje</td>
+                <td>enkele stoel</td>
+                <td>zaal 2</td>
+                <td>65 minuten</td>
+                <td>22:00 - 23:15 - 00:30</td>
+            </tr>
+            <tr>
+                <td>Hidden Figures</td>
+                <td>€ 45,00</td>
+                <td>twee kaartjes</td>
+                <td>dubbele stoel</td>
+                <td>zaal 2</td>
+                <td>65 minuten</td>
+                <td>22:00 - 23:15 - 00:30</td>
+            </tr>
+            <tr>
+                <td>The Fault in Our Stars</td>
+                <td>€ 12,00</td>
+                <td>één kaartje</td>
+                <td>enkele stoel</td>
+                <td>zaal 3</td>
+                <td>70 minuten</td>
+                <td>22:00 - 23:15 - 00:30</td>
+            </tr>
+            <tr>
+                <td>The Fault in Our Stars</td>
+                <td>€ 30,00</td>
+                <td>twee kaartjes</td>
+                <td>dubbele stoel</td>
+                <td>zaal 3</td>
+                <td>70 minuten</td>
+                <td>22:00 - 23:15 - 00:30</td>
+            </tr>
+            </tbody>
+                <!-- Add more films as needed -->
+            </table>
+        </div>
+
+    <div class="text-center">
+        <a href="/Home/Films" class="btn btn-dark" role="button">Terug naar Filmoverzicht</a>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Zoeken...">
+        <input type="submit" value="Zoek">
+    </div>
+
+</body>
+</html>
