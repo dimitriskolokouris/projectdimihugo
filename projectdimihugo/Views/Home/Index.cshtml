@@ -13,6 +13,11 @@
 <body onload="checkCookie()" class="homepage">
 <!-- opbouwen van de pagina -->
 
+    <!-- 3 stappen, stap 1 : in CSS dark mode voor nachtmodus toevoegen -->
+    <!-- dit is stap 2 van de 3 stappen, stap 2 : onder body in html knop nachtmodus toevoegen -->
+    <!-- 3 stappen, stap 3 : bij einde body in html script toegevoegd voor nachtmodus -->
+    <button onclick="myFunction()">Toggle dark mode</button>
+
   <!-- Welkom tekst op de website -->
   <div class="container">
     <h1>Welkom bij Galaxy-Scoop!</h1>
@@ -54,7 +59,15 @@
         <input type="submit" value="Zoek">
     </div>
 
-    
+    <!-- 3 stappen, stap 1 : in CSS dark mode voor nachtmodus toevoegen -->
+    <!-- 3 stappen, stap 2 : onder body in html knop nachtmodus toevoegen -->
+    <!-- dit is stap 3 van 3 stappen, stap 3 : bij einde body in html script toegevoegd voor nachtmodus -->
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
 </body>
 

@@ -9,24 +9,12 @@ html {
     #FFFFFF : wit voor achtergrond zoekbalk
     #BA00FF : paars voor o.a. contactbutton
     #45a049 : groen voor knoppen (als je eroverheen hoovert)
-
+    #f00d59 : #-0DD5F0 : lichtblauw voor de achtergrond
+    #FFFFFF : #-000000 : zwart voor het lettertype
+    #ebe315 : #-BA00FF : paars voor o.a. contactbutton
 */
 
-/* begin css code nachtmodus */
 
-:root {
-    --color-bg: #000000;
-    --color-fg: #0DD5F0;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-bg: #0DD5F0;
-        --color-fg: #000000;
-    }
-}
-
-/* eind css code nachtmodus */
 
 @media (min-width: 768px) {
     html {
@@ -40,22 +28,16 @@ html {
 }
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-fg);
-    /* background-color: #0DD5F0; /* achtergrond tussenstuk pagina */
-    /* color: #000000; */
+  margin-bottom: 60px;
+}
+
+
+body {
+    background-color: #f00d59; /* achtergrond tussenstuk pagina */
+    color: #FFFFFF;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
-}
-
-/* 3 stappen, stap 1 : in CSS dark mode voor nachtmodus toevoegen */
-/* 3 stappen, stap 2 : onder body in html knop nachtmodus toevoegen */
-/* 3 stappen, stap 3 : bij einde body in html script toegevoegd voor nachtmodus */
-.dark-mode {
-    background-color: yellow;
-    color: forestgreen;
 }
 
 .homepage container {
